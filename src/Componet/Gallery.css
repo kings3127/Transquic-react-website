@@ -1,0 +1,96 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100..900&display=swap');
+
+.car-container {
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.car-container h1 {
+  font-size: 2.5rem;
+  font-family: 'Prompt', sans-serif;
+  margin-bottom: 10px;
+}
+
+.car-container p {
+  font-size: 1.2rem;
+  font-family: 'Prompt', sans-serif;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* Four columns */
+  gap: 30px;  /* Space between images */
+  justify-content: center;
+}
+
+.image-item {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.car-name {
+  font-size: 1rem;
+  font-family: 'Prompt', sans-serif;
+  margin-top: 10px;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);  /* Two columns for medium screens */
+  }
+
+  .car-container h1 {
+    font-size: 2rem;
+  }
+
+  .car-container p {
+    font-size: 1rem;
+  }
+
+  .car-image {
+    width: 120px;
+  }
+
+  .car-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-gallery {
+    grid-template-columns: 1fr;  /* Single column for small screens */
+  }
+
+  .car-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .car-container p {
+    font-size: 0.9rem;
+  }
+
+  .car-image {
+    width: 100px;
+  }
+
+  .car-name {
+    font-size: 0.8rem;
+  }
+}
